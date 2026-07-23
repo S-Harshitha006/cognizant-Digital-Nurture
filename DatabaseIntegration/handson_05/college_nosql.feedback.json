@@ -1,0 +1,205 @@
+[{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc91"
+  },
+  "student_id": 1,
+  "course_code": "CS101",
+  "semester": "2022-ODD",
+  "rating": 5,
+  "comments": "Excellent teaching. Would recommend.",
+  "tags": [
+    "challenging",
+    "well-structured",
+    "good-examples"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-30T10:15:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "notes.pdf",
+      "size_kb": 240
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc92"
+  },
+  "student_id": 2,
+  "course_code": "CS101",
+  "semester": "2022-ODD",
+  "rating": 4,
+  "comments": "Very informative course.",
+  "tags": [
+    "challenging",
+    "interesting"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-28T09:00:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "assignment.pdf",
+      "size_kb": 180
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc93"
+  },
+  "student_id": 3,
+  "course_code": "CS101",
+  "semester": "2022-EVEN",
+  "rating": 2,
+  "comments": "Needs more practical sessions.",
+  "tags": [
+    "challenging",
+    "theory",
+    "reviewed"
+  ],
+  "submitted_at": {
+    "$date": "2022-05-20T08:30:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "feedback.docx",
+      "size_kb": 80
+    }
+  ],
+  "needs_review": true
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc94"
+  },
+  "student_id": 4,
+  "course_code": "CS102",
+  "semester": "2022-ODD",
+  "rating": 5,
+  "comments": "Loved the lab exercises.",
+  "tags": [
+    "practical",
+    "good-examples"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-29T11:45:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "lab.pdf",
+      "size_kb": 120
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc95"
+  },
+  "student_id": 5,
+  "course_code": "CS102",
+  "semester": "2022-ODD",
+  "rating": 3,
+  "comments": "Average experience.",
+  "tags": [
+    "average"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-25T13:20:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "report.pdf",
+      "size_kb": 95
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc96"
+  },
+  "student_id": 6,
+  "course_code": "CS103",
+  "semester": "2022-ODD",
+  "rating": 1,
+  "comments": "Very difficult.",
+  "tags": [
+    "hard",
+    "challenging",
+    "reviewed"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-22T10:10:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "review.pdf",
+      "size_kb": 110
+    }
+  ],
+  "needs_review": true
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc97"
+  },
+  "student_id": 7,
+  "course_code": "CS104",
+  "semester": "2022-EVEN",
+  "rating": 4,
+  "comments": "Good faculty support.",
+  "tags": [
+    "supportive",
+    "good-examples"
+  ],
+  "submitted_at": {
+    "$date": "2022-06-18T14:10:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "support.pdf",
+      "size_kb": 130
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc99"
+  },
+  "student_id": 9,
+  "course_code": "CS106",
+  "semester": "2022-ODD",
+  "rating": 5,
+  "comments": "Excellent content.",
+  "tags": [
+    "excellent",
+    "challenging"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-18T12:45:00.000Z"
+  },
+  "attachments": [
+    {
+      "filename": "content.pdf",
+      "size_kb": 160
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6a43f02be69557c83814dc9a"
+  },
+  "student_id": 10,
+  "course_code": "CS107",
+  "semester": "2022-ODD",
+  "rating": 4,
+  "comments": "Nice explanations.",
+  "tags": [
+    "clear",
+    "interesting"
+  ],
+  "submitted_at": {
+    "$date": "2022-11-16T16:20:00.000Z"
+  }
+}]
