@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+<header>
+
+    <h2 class="logo">Student Portal</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Grades</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section id="hero">
+
+    <h1>Welcome to Student Portal</h1>
+
+    <p>
+        Browse courses, notifications and student information.
+    </p>
+
+</section>
+
+<section id="courses">
+
+    <h2>Available Courses</h2>
+
+    <input
+        id="search-courses"
+        type="text"
+        placeholder="Search courses..."
+    >
+
+    <button id="sort-btn">
+        Sort by Credits
+    </button>
+
+    <p id="loading-courses">
+        Loading courses...
+    </p>
+
+    <div class="course-grid"></div>
+
+    <p id="total-credits"></p>
+
+    <div id="selected-course"></div>
+
+</section>
+
+<hr>
+
+<section id="notifications">
+
+    <h2>Notifications</h2>
+
+    <div id="loading-posts">
+
+        Loading Notifications...
+
+    </div>
+
+    <div id="notification-list"></div>
+
+    <div id="error-message"></div>
+
+    <button
+        id="retry-btn"
+        style="display:none;"
+    >
+        Retry
+    </button>
+
+</section>
+
+<footer>
+
+    <p>
+
+        © 2026 Student Portal
+
+    </p>
+
+</footer>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h2 class="logo">Student Portal</h2>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Grades</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <h1>Welcome to Student Portal</h1>
+    <p>Browse your enrolled courses and grades.</p>
+</section>
+
+<section id="courses">
+
+    <h2>Available Courses</h2>
+
+    <input
+        type="text"
+        id="search-courses"
+        placeholder="Search courses..."
+    >
+
+    <button id="sort-btn">Sort by Credits</button>
+
+    <div class="course-grid"></div>
+
+    <p id="total-credits"></p>
+
+    <div id="selected-course"></div>
+
+</section>
+
+<footer>
+    <p>© 2026 Student Portal</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
