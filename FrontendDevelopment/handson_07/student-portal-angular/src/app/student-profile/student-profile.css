@@ -1,0 +1,36 @@
+h2{
+    margin-bottom:20px;
+    color:#1976d2;
+}
+
+form{
+    max-width:500px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#1976d2;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1259a7;
+}
+
+.success{
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+}

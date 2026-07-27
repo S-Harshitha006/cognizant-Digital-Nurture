@@ -1,53 +1,17 @@
 function Header({ siteName, enrolledCount }) {
-
   return (
-
-    <header className="header">
-
-      <div>
-
-        <h1>{siteName}</h1>
-
-      </div>
+    <header style={{ background: "#1976d2", color: "white", padding: "15px" }}>
+      <h1>{siteName}</h1>
 
       <nav>
-
-        <ul>
-
-          <li>
-            <a href="#">Home</a>
-          </li>
-
-          <li>
-            <a href="#">Courses</a>
-          </li>
-
-          <li>
-            <a href="#">Profile</a>
-          </li>
-
-        </ul>
-
+        <a href="#" style={{ color: "white", marginRight: "15px" }}>Home</a>
+        <a href="#" style={{ color: "white", marginRight: "15px" }}>Courses</a>
+        <a href="#" style={{ color: "white" }}>Profile</a>
       </nav>
 
-      <div className="enrolled">
-
-        <strong>
-
-          Enrolled :
-
-          {" "}
-
-          {enrolledCount}
-
-        </strong>
-
-      </div>
-
+      <h3>Enrolled Courses: {enrolledCount}</h3>
     </header>
-
   );
-
 }
 
 export default Header;

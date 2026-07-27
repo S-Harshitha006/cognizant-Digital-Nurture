@@ -1,0 +1,294 @@
+/*
+Hands-On 9 - Accessibility & Cross Browser Compatibility
+
+Colour Contrast
+
+Before:
+Button Background : #3498db
+
+After:
+Button Background : #0056b3
+
+Reason:
+Improved to satisfy WCAG AA minimum contrast ratio (4.5:1).
+
+Cross Browser Check
+-------------------
+
+Chrome ✔
+Firefox ✔
+Edge ✔
+
+Observation:
+No layout differences observed.
+Flexbox and CSS Grid rendered consistently.
+
+Feature Support
+---------------
+CSS Grid
+Supported by all modern browsers
+Verified using https://caniuse.com
+
+Feature Detection
+-----------------
+Using @supports instead of browser detection.
+*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial, Helvetica, sans-serif;
+
+background:#f4f6f9;
+
+color:#222;
+
+line-height:1.6;
+
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:nowrap;
+padding:20px;
+background:#2c3e50;
+color:white;
+}
+
+.logo{
+
+font-size:30px;
+
+}
+
+nav ul{
+display:flex;
+flex-wrap:wrap;
+list-style:none;
+gap:15px;
+padding:0;
+margin:0;
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#FFFFFF;
+
+font-weight:700;
+
+padding:8px 12px;
+
+border-radius:5px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+background:#16324f;
+
+color:#ffffff;
+
+}
+
+nav a:focus{
+
+outline:3px solid orange;
+
+outline-offset:3px;
+
+}
+
+#hero{
+
+background:white;
+
+padding:60px;
+
+text-align:center;
+
+}
+
+#hero h2{
+
+margin-bottom:15px;
+
+}
+
+#courses{
+
+padding:40px;
+
+}
+
+label{
+
+display:block;
+
+margin-bottom:10px;
+
+font-weight:bold;
+
+}
+
+input{
+
+width:300px;
+
+padding:10px;
+
+margin-bottom:20px;
+
+border:1px solid #888;
+
+border-radius:5px;
+
+}
+
+input:focus{
+
+outline:3px solid orange;
+
+outline-offset:3px;
+
+}
+
+button{
+
+padding:10px 20px;
+
+cursor:pointer;
+
+background:#0056b3;
+
+color:white;
+
+border:none;
+
+border-radius:5px;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#003d80;
+
+}
+
+button:focus{
+
+outline:3px solid orange;
+
+outline-offset:3px;
+
+}
+
+#results-count{
+
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+@supports(display:grid){
+
+.course-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+}
+
+.course-grid{
+
+margin-top:30px;
+
+}
+
+.course-card{
+
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.course-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.course-card:focus{
+
+outline:3px solid orange;
+
+outline-offset:3px;
+
+}
+
+.course-card h3{
+
+margin-bottom:12px;
+
+color:#003d80;
+
+}
+
+.course-card p{
+
+margin:8px 0;
+
+}
+
+#total-credits,
+
+#selected-course{
+
+margin-top:25px;
+
+font-size:18px;
+
+font-weight:bold;
+
+}
+
+footer{
+
+margin-top:40px;
+
+padding:20px;
+
+background:#2c3e50;
+
+color:white;
+
+text-align:center;
+
+}

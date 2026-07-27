@@ -1,0 +1,21 @@
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h3 {
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 6px 0;
+}

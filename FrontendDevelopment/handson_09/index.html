@@ -1,0 +1,187 @@
+<!--
+Hands-On 9 - Accessibility & Cross Browser Compatibility
+
+Initial Lighthouse Accessibility Score: 100
+
+Issues Found:
+- Background and foreground colors had insufficient contrast ratio (Fixed).
+
+Accessibility Improvements:
+1. Added semantic HTML elements.
+2. Added labels for form inputs.
+3. Added aria-label for navigation.
+4. Added aria-current for the active navigation link.
+5. Added aria-live region.
+6. Corrected heading hierarchy.
+7. Added keyboard accessibility support.
+8. Improved colour contrast.
+9. Cross-browser compatibility checked using caniuse.com.
+10. CSS Variables Ponyfill included.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1 class="logo">
+        Student Portal
+    </h1>
+
+    <button
+        id="menu-btn"
+        aria-expanded="false">
+        Menu
+    </button>
+
+    <nav aria-label="Main navigation">
+
+        <ul>
+
+            <li>
+                <a href="#"
+                   aria-current="page">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    Grades
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section id="hero">
+
+    <h2>
+        Welcome to Student Portal
+    </h2>
+
+    <p>
+        Browse your enrolled courses and grades.
+    </p>
+
+</section>
+
+<section id="courses">
+
+    <h2>
+        Available Courses
+    </h2>
+
+    <label for="search-courses">
+
+        Search Courses
+
+    </label>
+
+    <input
+
+        type="text"
+
+        id="search-courses"
+
+        placeholder="Search courses..."
+
+        aria-describedby="results-count"
+
+    >
+
+    <button id="sort-btn">
+
+        Sort by Credits
+
+    </button>
+
+    <p
+
+        id="results-count"
+
+        role="status"
+
+        aria-live="polite"
+
+    >
+
+        5 courses found
+
+    </p>
+
+    <div
+
+        class="course-grid"
+
+        aria-label="Course List"
+
+    >
+
+    </div>
+
+    <p id="total-credits"></p>
+
+    <div id="selected-course"></div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        © 2026 Student Portal
+
+    </p>
+
+</footer>
+
+<!-- CSS Variables Polyfill -->
+
+<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+
+<script>
+
+cssVars();
+
+</script>
+
+<script type="module" src="app.js"></script>
+
+</body>
+
+</html>
